@@ -21,6 +21,7 @@ namespace TempProject.API.Controllers
 		[HttpGet]
 		public IEnumerable<WeatherForecast> Get()
 		{
+			int a = 5;
 			return Enumerable.Range(1, 5).Select(index => new WeatherForecast
 			{
 				Date = DateTime.Now.AddDays(index),
